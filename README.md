@@ -3,7 +3,7 @@ Experimental project aiming at making it possible to use [.NET Native](https://l
 
 Currently only the __x64__ target is tested and confirmed to be working, but support for __x86__ and __ARM32__ is planned.
 > [!NOTE] 
-> *__.NET Native__ already uses __CoreRT__'s ILCompiler for the __ARM64__ target unlike for the __x86__, __x64__, and __ARM32__ targets so you don't need this project for __ARM64__ targets.*
+> *__.NET Native__ already uses __CoreRT__'s ILCompiler for the __ARM64__ target (codenamed **ProjectX**) unlike for the __x86__, __x64__, and __ARM32__ targets so you don't need this project for __ARM64__ targets.*
 
 ## Usage
 > [!NOTE]  
