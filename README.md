@@ -27,7 +27,7 @@ Currently only the __x64__ target is tested and confirmed to be working, but sup
 <IlcParameters>/PureNative /LinkPath:"C:\Program Files\Microsoft Visual Studio\2022\Enterprise\VC\Tools\MSVC\14.38.33130\bin\Hostx64\x64" /NativeLibPath:"C:\Program Files (x86)\Windows Kits\10\Lib\10.0.22621.0\um\x64"</IlcParameters>
 ```
 
-9. **Profit!**
+8. **Profit!**
 
 ## Screenshot because why not
 ![image](https://github.com/ahmed605/ProjectRT/assets/34550324/4b764ead-490c-477a-920b-282be408713c)
