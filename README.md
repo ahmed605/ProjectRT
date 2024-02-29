@@ -9,7 +9,7 @@ Currently only the __x64__ target is tested and confirmed to be working, but sup
 > [!NOTE]  
 > *Usage guide below is temporary until a proper installation method is there.*
 
-1. **Compile** [`bootstrap_dll`](https://github.com/ahmed605/ProjectRT/tree/master/bootstrap_dll), [`shimAppDll`](https://github.com/ahmed605/ProjectRT/tree/master/shimAppDll), and [`shimExe`](https://github.com/ahmed605/ProjectRT/tree/master/shimExe) on the `Release` configuration.
+1. **Compile** [`bootstrap`](https://github.com/ahmed605/ProjectRT/tree/master/bootstrap), [`bootstrap_dll`](https://github.com/ahmed605/ProjectRT/tree/master/bootstrap_dll), [`shimAppDll`](https://github.com/ahmed605/ProjectRT/tree/master/shimAppDll), and [`shimExe`](https://github.com/ahmed605/ProjectRT/tree/master/shimExe) on the `Release` configuration.
 
 2. **Copy** the compiled `.lib`s to .NET Native's Nuget package ilc `tools` folder (`.nuget\runtime.win10-x64.microsoft.net.native.compiler.2.2.12-rel-31116-00\tools\x64\ilc\tools`).
 

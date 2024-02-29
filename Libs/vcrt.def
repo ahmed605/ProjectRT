@@ -1,4 +1,0 @@
-LIBRARY vcruntime140_app
-EXPORTS
-   memmove=vcruntime140_app.memmove
-   memset=vcruntime140_app.memset
