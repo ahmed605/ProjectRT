@@ -1,0 +1,63 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="Current">
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <RootNamespace>ILCompiler.DependencyAnalysisFramework</RootNamespace>
+    <AssemblyName>ILCompiler.DependencyAnalysisFramework</AssemblyName>
+    <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
+    <IsProjectNLibrary>true</IsProjectNLibrary>
+    <ProjectGuid>{6819E873-C9F8-4D08-B243-373D9A349D39}</ProjectGuid>
+    <FileAlignment>512</FileAlignment>
+    <LangVersion>12.0</LangVersion>
+    <Configuration Condition="'$(Configuration)' == ''">Release</Configuration>
+    <Platform Condition="'$(Platform)' == ''">AnyCPU</Platform>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="System.Memory">
+      <Version>4.5.5</Version>
+    </PackageReference>
+    <PackageReference Include="System.Xml.ReaderWriter">
+      <Version>4.3.1</Version>
+    </PackageReference>
+    <PackageReference Include="System.Collections.Immutable">
+      <Version>8.0.0</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ComputedStaticDependencyNode.cs" />
+    <Compile Include="DependencyAnalyzer.cs" />
+    <Compile Include="DependencyAnalyzerBase.cs" />
+    <Compile Include="DependencyNode.cs" />
+    <Compile Include="DependencyNodeCore.cs" />
+    <Compile Include="DgmlWriter.cs" />
+    <Compile Include="EventSourceLogStrategy.cs" />
+    <Compile Include="FirstMarkLogStrategy.cs" />
+    <Compile Include="FullGraphLogStrategy.cs" />
+    <Compile Include="IDependencyAnalyzerLogEdgeVisitor.cs" />
+    <Compile Include="IDependencyAnalyzerLogNodeVisitor.cs" />
+    <Compile Include="IDependencyAnalysisMarkStrategy.cs" />
+    <Compile Include="IDependencyNode.cs" />
+    <Compile Include="NoLogStrategy.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
