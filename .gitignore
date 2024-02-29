@@ -363,4 +363,4 @@ MigrationBackup/
 FodyWeavers.xsd
 
 # Include prebuilt libs
-!bootstrap_dll/vcrt/*
+!Libs/*

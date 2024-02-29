@@ -1,8 +1,3 @@
-// shimExe.cpp : Defines the functions for the static library.
-//
-
-#include "framework.h"
-
 #pragma comment(linker, "/nodefaultlib")
 #pragma comment(linker, "/defaultlib:uuid.lib")
 

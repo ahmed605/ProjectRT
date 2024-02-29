@@ -9,6 +9,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "bootstrap_dll", "bootstrap_
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "shimExe", "shimExe\shimExe.vcxproj", "{AAB5F147-60ED-4810-AD8D-A55902378216}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "bootstrap", "bootstrap\bootstrap.vcxproj", "{9A7F4A7E-8C32-4498-A342-59E91519CB74}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -41,6 +43,14 @@ Global
 		{AAB5F147-60ED-4810-AD8D-A55902378216}.Release|x64.Build.0 = Release|x64
 		{AAB5F147-60ED-4810-AD8D-A55902378216}.Release|x86.ActiveCfg = Release|Win32
 		{AAB5F147-60ED-4810-AD8D-A55902378216}.Release|x86.Build.0 = Release|Win32
+		{9A7F4A7E-8C32-4498-A342-59E91519CB74}.Debug|x64.ActiveCfg = Debug|x64
+		{9A7F4A7E-8C32-4498-A342-59E91519CB74}.Debug|x64.Build.0 = Debug|x64
+		{9A7F4A7E-8C32-4498-A342-59E91519CB74}.Debug|x86.ActiveCfg = Debug|Win32
+		{9A7F4A7E-8C32-4498-A342-59E91519CB74}.Debug|x86.Build.0 = Debug|Win32
+		{9A7F4A7E-8C32-4498-A342-59E91519CB74}.Release|x64.ActiveCfg = Release|x64
+		{9A7F4A7E-8C32-4498-A342-59E91519CB74}.Release|x64.Build.0 = Release|x64
+		{9A7F4A7E-8C32-4498-A342-59E91519CB74}.Release|x86.ActiveCfg = Release|Win32
+		{9A7F4A7E-8C32-4498-A342-59E91519CB74}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

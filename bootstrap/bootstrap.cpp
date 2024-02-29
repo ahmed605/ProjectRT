@@ -34,16 +34,16 @@ extern "C"
 #pragma data_seg(".tls")
 
 #if defined (_M_IA64) || defined (_M_AMD64)
-	_CRTALLOC(".tls")
+    _CRTALLOC(".tls")
 #endif
-    char _tls_start = 0;
+        char _tls_start = 0;
 
 #pragma data_seg(".tls$ZZZ")
 
 #if defined (_M_IA64) || defined (_M_AMD64)
-	_CRTALLOC(".tls$ZZZ")
+    _CRTALLOC(".tls$ZZZ")
 #endif
-	char _tls_end = 0;
+        char _tls_end = 0;
 }
 
 extern "C" BYTE GCStressFlag;
@@ -90,7 +90,7 @@ void Init()
     HINSTANCE mod = RhpRegisterCoffUtcModule(
         &ManagedTextStart,
         &ManagedTextEnd,
-        (void*)&__unbox_a, 
+        (void*)&__unbox_a,
         (unsigned int)((char*)&__unbox_z - (char*)&__unbox_a),
         &GCRootStrings,
         &DeltaShortcuts,
@@ -104,14 +104,12 @@ void Init()
         RhGcStress_Initialize2();
 }
 
-extern "C" BOOL WINAPI DllMain(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvReserved)
-{
-    switch (fdwReason)
-    {
-    case DLL_PROCESS_ATTACH:
-        Init();
-        break;
-    }
+extern "C" __int64 InvokeExeMain(void* main);
+extern "C" void __Managed_Main();
 
+extern "C" int wmain()
+{
+    Init();
+    InvokeExeMain(&__Managed_Main);
     return TRUE;
 }
